@@ -445,7 +445,7 @@ canvas.fluid {
   align-items: start;
 }
 
-/* entries (education / certifications) */
+/* entries (certifications) */
 
 .entry { margin-bottom: 1.4rem; }
 .entry:last-of-type { margin-bottom: 0; }
