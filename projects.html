@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — Chinemeze Njoku</title>
-  <meta name="description" content="Projects: Amnesia, GenPost, agentcard-disco, CourtVision, SLEEK Magazine, and Moodify.">
+  <meta name="description"
+    content="Projects: Amnesia, GenPost, X Job Application Agent, agentcard-disco, CourtVision, SLEEK Magazine, and Moodify.">
   <meta property="og:title" content="Projects — Chinemeze Njoku">
-  <meta property="og:description" content="Fine-tuned RAG systems, full-stack platforms, social automation, sports analytics, and open-source tooling.">
+  <meta property="og:description"
+    content="Fine-tuned RAG systems, full-stack platforms, social automation, sports analytics, and open-source tooling.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://chineey.github.io/assets/img/portrait.jpg">
   <meta property="og:url" content="https://chineey.github.io/projects.html">
@@ -15,9 +18,12 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="site-head">
@@ -79,6 +85,33 @@
       </div>
     </article>
 
+    <article class="case reveal" id="job-app-agent">
+      <header class="case-head">
+        <p class="case-meta mono">TypeScript · Next.js · Vercel Cron · X API · Gemini Vision · Telegram</p>
+        <h2>X Job Application Agent</h2>
+        <p class="case-sub">Finds job posts on X and applies for me.</p>
+      </header>
+      <div class="case-body">
+        <p>
+          An autonomous agent that watches X for software job posts, reads
+          the details (including ones posted as images, using Gemini
+          vision), and tailors a fresh PDF resume for each role. It then
+          sends the application from my Gmail, or attaches my own resume
+          unchanged if I prefer.
+        </p>
+        <p>
+          Posts that use an application form or link are logged and sent to
+          me on Telegram, along with failures and a pause command. If a
+          recruiter replies or a week passes in silence, it drafts the
+          response for me to send. It runs serverless on Vercel cron, and
+          I'm building it with a second developer on GitHub.
+        </p>
+        <p class="case-links mono">
+          <a href="https://github.com/chineey/job-app-agent" target="_blank" rel="noopener">Repository ↗</a>
+        </p>
+      </div>
+    </article>
+
     <article class="case reveal" id="agentcard-disco">
       <header class="case-head">
         <p class="case-meta mono">Python · CLI · A2A Protocol · Gemini LLM · PyPI</p>
@@ -121,20 +154,31 @@
 
     <article class="case reveal" id="sleek">
       <header class="case-head">
-        <p class="case-meta mono">Next.js 14 · React 18 · Node.js · Prisma ORM · PostgreSQL</p>
+        <p class="case-meta mono">Next.js 14 · React 18 · Node.js · Prisma ORM · PostgreSQL · Paystack · SEO</p>
         <h2>SLEEK Magazine</h2>
-        <p class="case-sub">Independent digital publication platform and culture magazine.</p>
+        <p class="case-sub">Independent digital publication and culture magazine, live in production.</p>
       </header>
       <div class="case-body">
         <p>
-          Full-stack editorial platform documenting contemporary Nigerian fashion,
-          visual art direction, music, and forward-thinking creators. Built and
-          actively managed using Next.js 14 App Router (SSR, API routes, and client-side routing),
-          React 18, and PostgreSQL with Prisma ORM for schema modeling and migrations.
-          Features a dynamic cover hero and editorial feed, subscriber-gated content with
-          paywall authentication, interactive event community ratings and comments,
-          a physical & digital merchandise shop, and an administrative CMS for real-time
-          publishing and layout management.
+          A production editorial and digital publishing platform covering
+          Nigerian fashion, art direction, music and emerging creators. It
+          serves around 200 daily visitors, and I build, ship and maintain
+          the whole thing myself, including the database. I also manage its
+          SEO, from Search Console setup and indexing to metadata and
+          structured content.
+        </p>
+        <p>
+          Readers get a cover hero and editorial feed, subscriber-only
+          articles behind a Paystack-powered paywall, event ratings and
+          comments, and a shop for physical and digital merchandise with
+          pickup locations and emailed purchase details. Editors run it
+          through a custom admin CMS where they publish articles, swap
+          covers and images, and control where each story sits on the page.
+        </p>
+        <p>
+          Built on the Next.js 14 App Router with server rendering and API
+          routes, React 18, and PostgreSQL through Prisma for schema design
+          and migrations. The look is a chrome and copper industrial theme.
         </p>
         <p class="case-links mono">
           <a href="https://sleekmagazine.ng" target="_blank" rel="noopener">Website ↗</a>
@@ -178,4 +222,5 @@
   <script src="js/fluid.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
